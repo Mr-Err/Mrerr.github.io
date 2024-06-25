@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 7.1.1">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha256-XOqroi11tY4EFQMR9ZYwZWKj5ZXiftSx36RRuC3anlA=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"www.3things.top","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.20.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"always","padding":18,"offset":12},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Python3官方文档 一、注释123456789101112131415# 这是单行注释&#x27;&#x27;&#x27;这是多行注释，用三个单引号这是多行注释，用三个单引号 这是多行注释，用三个单引号&#x27;&#x27;&#x27;&quot;&quot;&quot;这是多行注释（字符串），用三个双引号这是多行注释（字符串），用三个双引号 这是多行注释（字符串），用三个双引号&quot;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Python（三）-- 常用命令">
+<meta property="og:url" content="http://www.3things.top/computer/Python/Python_use.html">
+<meta property="og:site_name" content="Ming&#39;s Blog">
+<meta property="og:description" content="Python3官方文档 一、注释123456789101112131415# 这是单行注释&#x27;&#x27;&#x27;这是多行注释，用三个单引号这是多行注释，用三个单引号 这是多行注释，用三个单引号&#x27;&#x27;&#x27;&quot;&quot;&quot;这是多行注释（字符串），用三个双引号这是多行注释（字符串），用三个双引号 这是多行注释（字符串），用三个双引号&quot;">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://www.3things.top/img/python_data_240412.png">
+<meta property="og:image" content="http://www.3things.top/img/python_data_2404151.png">
+<meta property="og:image" content="http://www.3things.top/img/python_data_2404152.png">
+<meta property="og:image" content="http://www.3things.top/img/python_data_2404153.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404161.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404162.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160908.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160912.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160917.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160920.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160921.png">
+<meta property="og:image" content="http://www.3things.top/img/python_2404160923.png">
+<meta property="og:image" content="http://www.3things.top/img/python_compare1.png">
+<meta property="og:image" content="http://www.3things.top/img/python_range.png">
+<meta property="og:image" content="http://www.3things.top/img/python_eg_2404151.png">
+<meta property="article:published_time" content="2024-04-17T01:00:00.000Z">
+<meta property="article:modified_time" content="2024-06-25T07:02:19.000Z">
+<meta property="article:author" content="Mr-err">
+<meta property="article:tag" content="Python">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://www.3things.top/img/python_data_240412.png">
+
+
+<link rel="canonical" href="http://www.3things.top/computer/Python/Python_use">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://www.3things.top/computer/Python/Python_use.html","path":"/computer/Python/Python_use.html","title":"Python（三）-- 常用命令"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Python（三）-- 常用命令 | Ming's Blog</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">Ming's Blog</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E6%B3%A8%E9%87%8A"><span class="nav-number">1.</span> <span class="nav-text">一、注释</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%8F%98%E9%87%8F"><span class="nav-number">2.</span> <span class="nav-text">二、变量</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.</span> <span class="nav-text">三、数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B"><span class="nav-number">3.1.</span> <span class="nav-text">3.1、基本数据类型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-2%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%AD%97%E7%AC%A6%E4%B8%B2"><span class="nav-number">3.2.</span> <span class="nav-text">3.2、基本数据类型-字符串</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-3%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%85%83%E7%BB%84"><span class="nav-number">3.3.</span> <span class="nav-text">3.3、基本数据类型-元组</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-4%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%88%97%E8%A1%A8"><span class="nav-number">3.4.</span> <span class="nav-text">3.4、基本数据类型-列表</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-5%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E5%AD%97%E5%85%B8"><span class="nav-number">3.5.</span> <span class="nav-text">3.5、基本数据类型-字典</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-6%E3%80%81%E5%9F%BA%E6%9C%AC%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B-%E9%9B%86%E5%90%88"><span class="nav-number">3.6.</span> <span class="nav-text">3.6、基本数据类型-集合</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-7%E3%80%81%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E8%BD%AC%E6%8D%A2"><span class="nav-number">3.7.</span> <span class="nav-text">3.7、数据类型转换</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E6%A0%87%E8%AF%86%E7%AC%A6"><span class="nav-number">4.</span> <span class="nav-text">四、标识符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1%E3%80%81%E6%A0%87%E8%AF%86%E7%AC%A6%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="nav-number">4.1.</span> <span class="nav-text">4.1、标识符语法规则</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.</span> <span class="nav-text">五、运算符</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#5-1%E3%80%81%E7%AE%97%E6%9C%AF%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.1.</span> <span class="nav-text">5.1、算术运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-2%E3%80%81%E6%AF%94%E8%BE%83%EF%BC%88%E5%85%B3%E7%B3%BB%EF%BC%89%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.2.</span> <span class="nav-text">5.2、比较（关系）运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-3%E3%80%81%E8%B5%8B%E5%80%BC%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.3.</span> <span class="nav-text">5.3、赋值运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-4%E3%80%81%E9%80%BB%E8%BE%91%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.4.</span> <span class="nav-text">5.4、逻辑运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-5%E3%80%81%E4%BD%8D%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.5.</span> <span class="nav-text">5.5、位运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-6%E3%80%81%E6%88%90%E5%91%98%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.6.</span> <span class="nav-text">5.6、成员运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-7%E3%80%81%E8%BA%AB%E4%BB%BD%E8%BF%90%E7%AE%97%E7%AC%A6"><span class="nav-number">5.7.</span> <span class="nav-text">5.7、身份运算符</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-8%E3%80%81%E8%BF%90%E7%AE%97%E7%AC%A6%E4%BC%98%E5%85%88%E7%BA%A7"><span class="nav-number">5.8.</span> <span class="nav-text">5.8、运算符优先级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8B%E6%96%B9%E6%B3%95"><span class="nav-number">6.</span> <span class="nav-text">面向对象编程方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%88%9B%E5%BB%BA%E7%B1%BB"><span class="nav-number">6.1.</span> <span class="nav-text">创建类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A7%81%E6%9C%89%E5%8C%96"><span class="nav-number">6.2.</span> <span class="nav-text">私有化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B9%E6%B3%95"><span class="nav-number">6.3.</span> <span class="nav-text">方法</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%B8%B8%E7%94%A8%E6%A8%A1%E5%9D%97"><span class="nav-number">7.</span> <span class="nav-text">六、常用模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1%E3%80%81%E5%86%85%E7%BD%AE%E6%A8%A1%E5%9D%97"><span class="nav-number">7.1.</span> <span class="nav-text">6.1、内置模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#OS%E6%A8%A1%E5%9D%97"><span class="nav-number">7.2.</span> <span class="nav-text">OS模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#time%E6%A8%A1%E5%9D%97"><span class="nav-number">7.3.</span> <span class="nav-text">time模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#random%E6%A8%A1%E5%9D%97"><span class="nav-number">7.4.</span> <span class="nav-text">random模块</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-4%E3%80%81math%E6%A8%A1%E5%9D%97"><span class="nav-number">7.5.</span> <span class="nav-text">6.4、math模块</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%A8%A1%E5%9D%97"><span class="nav-number">8.</span> <span class="nav-text">模块</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%87%E4%BB%B6%E6%93%8D%E4%BD%9C"><span class="nav-number">8.1.</span> <span class="nav-text">文件操作</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96csv-%E6%96%87%E4%BB%B6"><span class="nav-number">8.1.1.</span> <span class="nav-text">读取csv 文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96%E5%9B%BE%E7%89%87"><span class="nav-number">8.1.2.</span> <span class="nav-text">读取图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AF%BB%E5%8F%96%E9%9F%B3%E9%A2%91"><span class="nav-number">8.1.3.</span> <span class="nav-text">读取音频</span></a></li></ol></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Mr-err"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">Mr-err</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author animated">
+      <span class="links-of-author-item">
+        <a href="https://github.com/Mr-err" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;Mr-err" rel="noopener me" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:Mr_err@yeah.net" title="E-Mail → mailto:Mr_err@yeah.net" rel="noopener me" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+      </span>
+  </div>
+  <div class="cc-license animated" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" class="cc-opacity" rel="noopener" target="_blank"><img src="https://cdnjs.cloudflare.com/ajax/libs/creativecommons-vocabulary/2020.11.3/assets/license_badges/big/by_nc_sa.svg" alt="Creative Commons"></a>
+  </div>
+
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          链接
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <a href="https://www.runoob.com/" title="https:&#x2F;&#x2F;www.runoob.com&#x2F;" rel="noopener" target="_blank">菜鸟教程</a>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://www.3things.top/computer/Python/Python_use.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mr-err">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="Python（三）-- 常用命令 | Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Python（三）-- 常用命令
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2024-04-17 09:00:00" itemprop="dateCreated datePublished" datetime="2024-04-17T09:00:00+08:00">2024-04-17</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2024-06-25 15:02:19" itemprop="dateModified" datetime="2024-06-25T15:02:19+08:00">2024-06-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/" itemprop="url" rel="index"><span itemprop="name">编程语言</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/Python/" itemprop="url" rel="index"><span itemprop="name">Python</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p><a target="_blank" rel="noopener" href="https://docs.python.org/3/">Python3官方文档</a></p>
+<h1 id="一、注释"><a href="#一、注释" class="headerlink" title="一、注释"></a>一、注释</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment"># 这是单行注释</span></span><br><span class="line"></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"><span class="string">这是多行注释，用三个单引号</span></span><br><span class="line"><span class="string">这是多行注释，用三个单引号 </span></span><br><span class="line"><span class="string">这是多行注释，用三个单引号</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">这是多行注释（字符串），用三个双引号</span></span><br><span class="line"><span class="string">这是多行注释（字符串），用三个双引号 </span></span><br><span class="line"><span class="string">这是多行注释（字符串），用三个双引号</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="二、变量"><a href="#二、变量" class="headerlink" title="二、变量"></a>二、变量</h1><p>命名规范（建议）：见名知意、下划线命名法、英文字母全小写</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#变量的定义</span></span><br><span class="line">变量名 = 变量值</span><br></pre></td></tr></table></figure>
+
+<h1 id="三、数据类型"><a href="#三、数据类型" class="headerlink" title="三、数据类型"></a>三、数据类型</h1><h2 id="3-1、基本数据类型"><a href="#3-1、基本数据类型" class="headerlink" title="3.1、基本数据类型"></a>3.1、基本数据类型</h2><p><img src="/./img/python_data_240412.png" alt="常见数据类型"><br>Python中的数据类型可以做以下几种分类：</p>
+<ul>
+<li>有序：可以使用下标（索引）访问元素</li>
+<li>无序：不可以使用下标（索引）访问元素</li>
+<li>可变：可以被修改</li>
+<li>不可变：不可以被修改<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用type查看类型</span></span><br><span class="line"><span class="built_in">print</span>(<span class="built_in">type</span>(<span class="number">666</span>))</span><br></pre></td></tr></table></figure></li>
+</ul>
+<h2 id="3-2、基本数据类型-字符串"><a href="#3-2、基本数据类型-字符串" class="headerlink" title="3.2、基本数据类型-字符串"></a>3.2、基本数据类型-字符串</h2><p><strong>字符串的常用操作</strong><br><img src="/./img/python_data_2404151.png" alt="字符串常用操作"></p>
+<p><strong>字符串格式化输出</strong><br><img src="/./img/python_data_2404152.png" alt="格式化输出"></p>
+<h2 id="3-3、基本数据类型-元组"><a href="#3-3、基本数据类型-元组" class="headerlink" title="3.3、基本数据类型-元组"></a>3.3、基本数据类型-元组</h2><p><strong>元组</strong></p>
+<ul>
+<li>元组是一个有序且不可变序列，其中的元素可以是任意对象。</li>
+<li>元组可以使用索引和切片的方式取值。</li>
+<li>元组中的数据一旦生成就无法更改。</li>
+</ul>
+<p><strong>元组的创建</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">元组名 = (obj1,obj2...)</span><br></pre></td></tr></table></figure>
+
+<p><strong>元组的运算</strong><br><img src="/./img/python_data_2404153.png" alt="元组的运算"></p>
+<h2 id="3-4、基本数据类型-列表"><a href="#3-4、基本数据类型-列表" class="headerlink" title="3.4、基本数据类型-列表"></a>3.4、基本数据类型-列表</h2><p><strong>列表</strong></p>
+<ul>
+<li>列表是一个有序可变的序列，其中的元素可以是任意对象。</li>
+<li>列表可以使用索引和切片的方式取值</li>
+<li>列表可以随意地修改、删除和增加元素</li>
+<li>相较于元组而言，列表的安全性差，但是灵活性高</li>
+<li>列表支持的运算符同元组一样</li>
+</ul>
+<p><strong>列表的创建</strong></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">列表名 = [obj1,obj2...]</span><br></pre></td></tr></table></figure>
+<p><strong>列表常用操作</strong><br><img src="/./img/python_2404161.png" alt="列表常用操作"></p>
+<h2 id="3-5、基本数据类型-字典"><a href="#3-5、基本数据类型-字典" class="headerlink" title="3.5、基本数据类型-字典"></a>3.5、基本数据类型-字典</h2><p><img src="/./img/python_2404162.png" alt="字典的定义"><br><img src="/./img/python_2404160908.png" alt="字典的创建"><br><img src="/./img/python_2404160912.png" alt="字典常用操作1"><br><img src="/./img/python_2404160917.png" alt="字典常用操作2"></p>
+<h2 id="3-6、基本数据类型-集合"><a href="#3-6、基本数据类型-集合" class="headerlink" title="3.6、基本数据类型-集合"></a>3.6、基本数据类型-集合</h2><p><img src="/./img/python_2404160920.png" alt="集合的定义"><br><img src="/./img/python_2404160921.png" alt="集合的运算"><br><img src="/./img/python_2404160923.png" alt="集合常用操作"></p>
+<h2 id="3-7、数据类型转换"><a href="#3-7、数据类型转换" class="headerlink" title="3.7、数据类型转换"></a>3.7、数据类型转换</h2><p><strong>①、隐式类型转换 - 自动完成</strong><br>在隐式类型转换中，Python会自动将一种数据类型转换为另一种数据类型</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">num_int = <span class="number">123</span></span><br><span class="line">num_flo = <span class="number">1.23</span></span><br><span class="line"></span><br><span class="line">num_new = num_int + num_flo</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;num_int 数据类型为:&quot;</span>,<span class="built_in">type</span>(num_int))</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;num_flo 数据类型为:&quot;</span>,<span class="built_in">type</span>(num_flo))</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;num_new 值为:&quot;</span>,num_new)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;num_new 数据类型为:&quot;</span>,<span class="built_in">type</span>(num_new))</span><br></pre></td></tr></table></figure>
+
+<p><strong>②、显式类型转换 - 需要使用类型函数来转换</strong><br>在显式类型转换中，用户将对象的数据类型转换为所需的数据类型。 我们使用 int()、float()、str() 等预定义函数来执行显式类型转换。</p>
+<ul>
+<li>int() 强制转换为整型</li>
+<li>float() 强制转换为浮点型</li>
+<li>str() 强制转换为字符串类型</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="built_in">int</span>(<span class="number">3.2</span>)       <span class="comment"># x 输出结果为 3</span></span><br><span class="line">y = <span class="built_in">float</span>(<span class="number">1</span>)       <span class="comment"># y 输出结果为 1.0</span></span><br><span class="line">z = <span class="built_in">str</span>(<span class="number">3.0</span>)       <span class="comment"># z 输出结果为 &#x27;3.0&#x27;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="四、标识符"><a href="#四、标识符" class="headerlink" title="四、标识符"></a>四、标识符</h1><h2 id="4-1、标识符语法规则"><a href="#4-1、标识符语法规则" class="headerlink" title="4.1、标识符语法规则"></a>4.1、标识符语法规则</h2><ul>
+<li>第一个字符必须是字母表中字母或下划线 _ 。</li>
+<li>标识符的其他的部分由字母、数字和下划线组成</li>
+<li>标识符对大小写敏感。<br>注：在 Python 3 中，可以用中文作为变量名，非 ASCII 标识符也是允许的了。</li>
+</ul>
+<h1 id="五、运算符"><a href="#五、运算符" class="headerlink" title="五、运算符"></a>五、运算符</h1><h2 id="5-1、算术运算符"><a href="#5-1、算术运算符" class="headerlink" title="5.1、算术运算符"></a>5.1、算术运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>+</td>
+<td>加 - 两个对象相加</td>
+<td>a + b 输出结果 31</td>
+</tr>
+<tr>
+<td>-</td>
+<td>减 - 得到负数或是一个数减去另一个数</td>
+<td>a - b 输出结果 -11</td>
+</tr>
+<tr>
+<td>*</td>
+<td>乘 - 两个数相乘或是返回一个被重复若干次的字符串</td>
+<td>a * b 输出结果 210</td>
+</tr>
+<tr>
+<td>&#x2F;</td>
+<td>除 - x 除以 y</td>
+<td>b &#x2F; a 输出结果 2.1</td>
+</tr>
+<tr>
+<td>%</td>
+<td>取模 - 返回除法的余数</td>
+<td>b % a 输出结果 1</td>
+</tr>
+<tr>
+<td>**</td>
+<td>幂 - 返回x的y次幂</td>
+<td>a**b 为10的21次方</td>
+</tr>
+<tr>
+<td>&#x2F;&#x2F;</td>
+<td>取整除 - 往小的方向取整数</td>
+<td>9&#x2F;&#x2F;2输出结果为4</td>
+</tr>
+</tbody></table>
+<h2 id="5-2、比较（关系）运算符"><a href="#5-2、比较（关系）运算符" class="headerlink" title="5.2、比较（关系）运算符"></a>5.2、比较（关系）运算符</h2><p><img src="/./img/python_compare1.png" alt="比较运算符"></p>
+<h2 id="5-3、赋值运算符"><a href="#5-3、赋值运算符" class="headerlink" title="5.3、赋值运算符"></a>5.3、赋值运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>简单的赋值运算符</td>
+<td>c &#x3D; a + b 将 a + b 的运算结果赋值为 c</td>
+</tr>
+<tr>
+<td>+&#x3D;</td>
+<td>加法赋值运算符</td>
+<td>c +&#x3D; a 等效于 c &#x3D; c + a</td>
+</tr>
+<tr>
+<td>-&#x3D;</td>
+<td>减法赋值运算符</td>
+<td>c -&#x3D; a 等效于 c &#x3D; c - a</td>
+</tr>
+<tr>
+<td>*&#x3D;</td>
+<td>乘法赋值运算符</td>
+<td>c *&#x3D; a 等效于 c &#x3D; c * a</td>
+</tr>
+<tr>
+<td>&#x2F;&#x3D;</td>
+<td>除法赋值运算符</td>
+<td>c &#x2F;&#x3D; a 等效于 c &#x3D; c &#x2F; a</td>
+</tr>
+<tr>
+<td>%&#x3D;</td>
+<td>取模赋值运算符</td>
+<td>c %&#x3D; a 等效于 c &#x3D; c % a</td>
+</tr>
+<tr>
+<td>**&#x3D;</td>
+<td>幂赋值运算符</td>
+<td>c **&#x3D; a 等效于 c &#x3D; c ** a</td>
+</tr>
+<tr>
+<td>&#x2F;&#x2F;&#x3D;</td>
+<td>取整除赋值运算符</td>
+<td>c &#x2F;&#x2F;&#x3D; a 等效于 c &#x3D; c &#x2F;&#x2F; a</td>
+</tr>
+<tr>
+<td>:&#x3D;</td>
+<td>海象运算符，这个运算符的主要目的是在表达式中同时进行赋值和返回赋值的值。<strong>Python3.8 版本新增运算符</strong>。</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="5-4、逻辑运算符"><a href="#5-4、逻辑运算符" class="headerlink" title="5.4、逻辑运算符"></a>5.4、逻辑运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>逻辑表达式</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>and</td>
+<td>x and y</td>
+<td>布尔”与” - 如果 x 为 False，x and y 返回 x 的值，否则返回 y 的计算值。</td>
+<td>(a and b) 返回 20。</td>
+</tr>
+<tr>
+<td>or</td>
+<td>x or y</td>
+<td>布尔”或” - 如果 x 是 True，它返回 x 的值，否则它返回 y 的计算值。</td>
+<td>(a or b) 返回 10。</td>
+</tr>
+<tr>
+<td>not</td>
+<td>not x</td>
+<td>布尔”非” - 如果 x 为 True，返回 False 。如果 x 为 False，它返回 True。</td>
+<td>not(a and b) 返回 False</td>
+</tr>
+</tbody></table>
+<h2 id="5-5、位运算符"><a href="#5-5、位运算符" class="headerlink" title="5.5、位运算符"></a>5.5、位运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&amp;</td>
+<td>按位与运算符：参与运算的两个值,如果两个相应位都为1,则该位的结果为1,否则为0</td>
+<td>(a &amp; b) 输出结果 12 ，二进制解释： 0000 1100</td>
+</tr>
+<tr>
+<td>|</td>
+<td>按位或运算符：只要对应的二个二进位有一个为1时，结果位就为1。</td>
+<td>(a | b) 输出结果 61 ，二进制解释： 0011 1101</td>
+</tr>
+<tr>
+<td>^</td>
+<td>按位异或运算符：当两对应的二进位相异时，结果为1</td>
+<td>(a ^ b) 输出结果 49 ，二进制解释： 0011 0001</td>
+</tr>
+<tr>
+<td>~</td>
+<td>按位取反运算符：对数据的每个二进制位取反,即把1变为0,把0变为1。~x 类似于 -x-1</td>
+<td>(~a ) 输出结果 -61 ，二进制解释： 1100 0011， 在一个有符号二进制数的补码形式。</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>左移动运算符：运算数的各二进位全部左移若干位，由”&lt;&lt;”右边的数指定移动的位数，高位丢弃，低位补0。</td>
+<td>a &lt;&lt; 2 输出结果 240 ，二进制解释： 1111 0000</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>右移动运算符：把”&gt;&gt;”左边的运算数的各二进位全部右移若干位，”&gt;&gt;”右边的数指定移动的位数</td>
+<td>a &gt;&gt; 2 输出结果 15 ，二进制解释： 0000 1111</td>
+</tr>
+</tbody></table>
+<h2 id="5-6、成员运算符"><a href="#5-6、成员运算符" class="headerlink" title="5.6、成员运算符"></a>5.6、成员运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>in</td>
+<td>如果在指定的序列中找到值返回 True，否则返回 False。</td>
+<td>x 在 y 序列中 , 如果 x 在 y 序列中返回 True。</td>
+</tr>
+<tr>
+<td>not in</td>
+<td>如果在指定的序列中没有找到值返回 True，否则返回 False。</td>
+<td>x 不在 y 序列中 , 如果 x 不在 y 序列中返回 True。</td>
+</tr>
+</tbody></table>
+<h2 id="5-7、身份运算符"><a href="#5-7、身份运算符" class="headerlink" title="5.7、身份运算符"></a>5.7、身份运算符</h2><table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+<th>实例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>is</td>
+<td>is 是判断两个标识符是不是引用自一个对象</td>
+<td><strong>x is y</strong>, 类似 <strong>id(x) &#x3D;&#x3D; id(y)</strong> , 如果引用的是同一个对象则返回 True，否则返回 False</td>
+</tr>
+<tr>
+<td>is not</td>
+<td>is not 是判断两个标识符是不是引用自不同对象</td>
+<td><strong>x is not y</strong> ， 类似 **id(x) !&#x3D; id(y)**。如果引用的不是同一个对象则返回结果 True，否则返回 False。</td>
+</tr>
+</tbody></table>
+<p><strong>注：</strong> <a target="_blank" rel="noopener" href="https://www.runoob.com/python/python-func-id.html">id()</a> 函数用于获取对象内存地址。</p>
+<h2 id="5-8、运算符优先级"><a href="#5-8、运算符优先级" class="headerlink" title="5.8、运算符优先级"></a>5.8、运算符优先级</h2><p>以下表格列出了从最高到最低优先级的所有运算符， 相同单元格内的运算符具有相同优先级。 运算符均指二元运算，除非特别指出。 相同单元格内的运算符从左至右分组（除了幂运算是从右至左分组）：</p>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>(expressions...)</code>,<code>[expressions...]</code>, <code>&#123;key: value...&#125;</code>, <code>&#123;expressions...&#125;</code></td>
+<td>圆括号的表达式</td>
+</tr>
+<tr>
+<td><code>x[index]</code>, <code>x[index:index]</code>, <code>x(arguments...)</code>, <code>x.attribute</code></td>
+<td>读取，切片，调用，属性引用</td>
+</tr>
+<tr>
+<td>await x</td>
+<td>await 表达式</td>
+</tr>
+<tr>
+<td><code>**</code></td>
+<td>乘方(指数)</td>
+</tr>
+<tr>
+<td><code>+x</code>, <code>-x</code>, <code>~x</code></td>
+<td>正，负，按位非 NOT</td>
+</tr>
+<tr>
+<td><code>*</code>, <code>@</code>, <code>/</code>, <code>//</code>, <code>%</code></td>
+<td>乘，矩阵乘，除，整除，取余</td>
+</tr>
+<tr>
+<td><code>+</code>, <code>-</code></td>
+<td>加和减</td>
+</tr>
+<tr>
+<td><code>&lt;&lt;</code>, <code>&gt;&gt;</code></td>
+<td>移位</td>
+</tr>
+<tr>
+<td><code>&amp;</code></td>
+<td>按位与 AND</td>
+</tr>
+<tr>
+<td><code>^</code></td>
+<td>按位异或 XOR</td>
+</tr>
+<tr>
+<td>`</td>
+<td>`</td>
+</tr>
+<tr>
+<td><code>`in`,`not in`, `is`,`is not`, `&lt;`, `&lt;=`, `&gt;`, `&gt;=`, `!=`, `==`</code></td>
+<td>比较运算，包括成员检测和标识号检测</td>
+</tr>
+<tr>
+<td><code>`not x`</code></td>
+<td>逻辑非 NOT</td>
+</tr>
+<tr>
+<td><code>`and`</code></td>
+<td>逻辑与 AND</td>
+</tr>
+<tr>
+<td><code>`or`</code></td>
+<td>逻辑或 OR</td>
+</tr>
+<tr>
+<td><code>`if` -- `else`</code></td>
+<td>条件表达式</td>
+</tr>
+<tr>
+<td><code>`lambda`</code></td>
+<td>lambda 表达式</td>
+</tr>
+<tr>
+<td><code>:=</code></td>
+<td>赋值表达式</td>
+</tr>
+</tbody></table>
+<h1 id="面向对象编程方法"><a href="#面向对象编程方法" class="headerlink" title="面向对象编程方法"></a>面向对象编程方法</h1><h2 id="创建类"><a href="#创建类" class="headerlink" title="创建类"></a>创建类</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">类名</span>（父类） <span class="comment">#class关键字声明类，父类可以是多个，默认继承object</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;类说明文档&#x27;&#x27;&#x27;</span></span><br><span class="line">...类体...</span><br></pre></td></tr></table></figure>
+
+<h2 id="私有化"><a href="#私有化" class="headerlink" title="私有化"></a>私有化</h2><ul>
+<li>默认情况下，属性在Python中都是“public”。</li>
+<li>模块级私有化：在属性或方法前加上一个下划线即可。防止模块的属性用“from mymodule import *”来加载</li>
+<li>完全私有化：只能自己访问。在方法或属性前加双下划线。（Python中的完全私有化是一个假的私有化。其作用其实是将之前的属性或方法名改为了 ‘_类名._属性&#x2F;方法’ )</li>
+</ul>
+<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul>
+<li>实例方法，第一个参数为self，调用时需要传递实例给self</li>
+<li>静态方法，和类有关，但是在使用时并不需要类或者实例本身（和函数类似）<ul>
+<li>通过@staticmethod实现</li>
+</ul>
+</li>
+<li>类方法，第一个参数cls，调用时需要传递类型给类方法。<ul>
+<li>通过@classmethod实现</li>
+</ul>
+</li>
+</ul>
+<h1 id="六、常用模块"><a href="#六、常用模块" class="headerlink" title="六、常用模块"></a>六、常用模块</h1><h2 id="6-1、内置模块"><a href="#6-1、内置模块" class="headerlink" title="6.1、内置模块"></a>6.1、内置模块</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>help()</td>
+<td>查看帮助信息</td>
+<td>help(print)</td>
+</tr>
+<tr>
+<td>print()</td>
+<td>输出</td>
+<td>print(“hello world”)</td>
+</tr>
+<tr>
+<td>input()</td>
+<td>从键盘上获取输入，<strong>注意：imput返回的数据类型为字符串</strong></td>
+<td>input(“请输入您的姓名”)</td>
+</tr>
+<tr>
+<td>type()</td>
+<td>查看数据类型</td>
+<td>type(666)</td>
+</tr>
+<tr>
+<td>del()</td>
+<td>删除内存中的对象</td>
+<td>del(name)</td>
+</tr>
+<tr>
+<td>len()</td>
+<td>查看数据长度</td>
+<td>len(123)</td>
+</tr>
+<tr>
+<td>range()</td>
+<td>生成序列</td>
+<td><img src="/./img/python_range.png" alt="序列示例"></td>
+</tr>
+<tr>
+<td>abs(x)</td>
+<td>求绝对值</td>
+<td>abs(-6)</td>
+</tr>
+<tr>
+<td>round(x)</td>
+<td>四舍五入</td>
+<td>round(6.38)</td>
+</tr>
+<tr>
+<td>divmod(x,y)</td>
+<td>返回商和余数</td>
+<td>divmod(9,2)</td>
+</tr>
+<tr>
+<td>max()</td>
+<td>求最大值</td>
+<td>max(5,6)</td>
+</tr>
+<tr>
+<td>min()</td>
+<td>求最小值</td>
+<td>min(1,2)</td>
+</tr>
+<tr>
+<td>sum()</td>
+<td>求和</td>
+<td>sum(2,3)</td>
+</tr>
+<tr>
+<td>str[a:b:c]</td>
+<td>批量获取字符串，a为其实元素的位置，b是终止元素的位置，c为步长</td>
+<td><img src="/./img/python_eg_2404151.png" alt="切片示例"></td>
+</tr>
+<tr>
+<td>open()</td>
+<td>文件操作</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="OS模块"><a href="#OS模块" class="headerlink" title="OS模块"></a>OS模块</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>os.getpid()</td>
+<td>获取当前进程id</td>
+<td>print(“当前进程的 ID：”, os.getpid())</td>
+</tr>
+<tr>
+<td>os.getppid()</td>
+<td>获取当前父进程id</td>
+<td>print(“当前父进程的 ID：”, os.getppid())</td>
+</tr>
+<tr>
+<td>os.getcwd()</td>
+<td>获取当前所在路径</td>
+<td>print(“当前所在路径为：”,os.getcwd())</td>
+</tr>
+<tr>
+<td>os.chdir(path)</td>
+<td>改变当前工作目录</td>
+<td>os.chdir(“&#x2F;root”)</td>
+</tr>
+<tr>
+<td>os.listdir()</td>
+<td>返回目录下所有文件</td>
+<td>print(“当前目录下的文件有：”, os.listdir(os.getcwd()))</td>
+</tr>
+<tr>
+<td>os.curdir</td>
+<td>获取当前工作目录的名称</td>
+<td></td>
+</tr>
+<tr>
+<td>os.pardir</td>
+<td>父目录字符串名称</td>
+<td></td>
+</tr>
+<tr>
+<td>os.remove()</td>
+<td>删除指定文件</td>
+<td></td>
+</tr>
+<tr>
+<td>os.removedirs(path)</td>
+<td>删除文件夹</td>
+<td></td>
+</tr>
+<tr>
+<td>os.rename(src, dst)</td>
+<td>重命名文件,(命名前，命名后)</td>
+<td></td>
+</tr>
+<tr>
+<td>os.path.abspath(path)</td>
+<td>返回绝对路径</td>
+<td></td>
+</tr>
+<tr>
+<td>os.path.exists(path)</td>
+<td>文件存在则返回 True,不存在返回 False</td>
+<td></td>
+</tr>
+<tr>
+<td>os.path.getsize(path)</td>
+<td>返回文件大小，如果文件不存在就返回错误</td>
+<td></td>
+</tr>
+<tr>
+<td>os.path.isfile(path)</td>
+<td>判断路径是否为文件</td>
+<td></td>
+</tr>
+<tr>
+<td>os.path.isdir(path)</td>
+<td>判断路径是否为文件夹</td>
+<td></td>
+</tr>
+<tr>
+<td>sys.exit([n])</td>
+<td>此方法可以使当前程序退出，n为0表示正常退出，其他值表示异常退出</td>
+<td></td>
+</tr>
+<tr>
+<td>sys.path</td>
+<td>获取模块搜索路径</td>
+<td></td>
+</tr>
+<tr>
+<td>sys.argv</td>
+<td>从程序外部向程序传递参数，参数以列表的形式传递，第一个为当前文件名</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="time模块"><a href="#time模块" class="headerlink" title="time模块"></a>time模块</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>time.time()</td>
+<td>用于获取当前时间戳</td>
+<td>print(“时间戳：”,time.time())</td>
+</tr>
+<tr>
+<td>time.localtime()</td>
+<td>获取时间元组</td>
+<td>print(“本地时间为 :”, time.asctime(localtime))</td>
+</tr>
+<tr>
+<td>time.asctime()</td>
+<td>获取格式化的时间</td>
+<td>print(“本地时间为 :”, time.asctime(localtime) )</td>
+</tr>
+<tr>
+<td>time.strftime(format[, t])</td>
+<td>接收时间元组，并返回以可读字符串表示的当地时间，格式由参数format决定</td>
+<td>print(time.strftime(“%Y-%m-%d %H:%M:%S”, time.localtime()))</td>
+</tr>
+</tbody></table>
+<h2 id="random模块"><a href="#random模块" class="headerlink" title="random模块"></a>random模块</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>randint(1,10)</td>
+<td>返回 1 到 10 的一个整数型随机数</td>
+<td></td>
+</tr>
+<tr>
+<td>random()</td>
+<td>返回0 到 1 之间的随机浮点数</td>
+<td></td>
+</tr>
+<tr>
+<td>uniform(2.1,3.4)</td>
+<td>返回2.1 到 3.4 之间的随机浮点数，区间可以不是整数</td>
+<td></td>
+</tr>
+<tr>
+<td>choice()</td>
+<td>从序列中随机选取一个元素</td>
+<td></td>
+</tr>
+<tr>
+<td>randrange(1,100,2)</td>
+<td>返回从 1 到 100 的间隔为 2 的随机整数</td>
+<td></td>
+</tr>
+<tr>
+<td>sample(“python”, 3)</td>
+<td>取python中的三个值，返回pyt</td>
+<td></td>
+</tr>
+<tr>
+<td>shuffle(l)</td>
+<td>打乱元组l的序列</td>
+<td></td>
+</tr>
+</tbody></table>
+<h2 id="6-4、math模块"><a href="#6-4、math模块" class="headerlink" title="6.4、math模块"></a>6.4、math模块</h2><table>
+<thead>
+<tr>
+<th>函数</th>
+<th>功能</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>sin()</td>
+<td>三角函数-正弦</td>
+<td></td>
+</tr>
+<tr>
+<td>cos()</td>
+<td>三角函数-余弦</td>
+<td></td>
+</tr>
+<tr>
+<td>tanh()</td>
+<td>三角函数-正割</td>
+<td></td>
+</tr>
+<tr>
+<td>fabs()</td>
+<td>取绝对值</td>
+<td></td>
+</tr>
+<tr>
+<td>ceil()</td>
+<td>向上取整</td>
+<td></td>
+</tr>
+<tr>
+<td>floor()</td>
+<td>向下取整</td>
+<td></td>
+</tr>
+<tr>
+<td>factorial()</td>
+<td>求阶乘</td>
+<td></td>
+</tr>
+<tr>
+<td>pow()</td>
+<td>x的y次方</td>
+<td></td>
+</tr>
+</tbody></table>
+<h1 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h1><p><a target="_blank" rel="noopener" href="https://docs.python-requests.org/en/latest/index.html">Request官网</a></p>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2>
+<div class="markmap-container" style="height:height">
+  <svg data="{&quot;t&quot;:&quot;root&quot;,&quot;d&quot;:0,&quot;v&quot;:&quot;&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;内置函数open&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;上下文管理器&quot;}],&quot;p&quot;:{}}"></svg>
+</div>
+
+<h3 id="读取csv-文件"><a href="#读取csv-文件" class="headerlink" title="读取csv 文件"></a>读取csv 文件</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#读取 excel 文件使用 read_excel 方法即可，但是需要实现安装额外的依赖包 xlrd</span></span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line">df = pd.read_csv(<span class="string">&quot;air.csv&quot;</span>, names=[<span class="string">&quot;col1&quot;</span>,<span class="string">&quot;col2&quot;</span>,<span class="string">&quot;col3&quot;</span>], encoding=<span class="string">&quot;GBK&quot;</span>)</span><br><span class="line">df</span><br></pre></td></tr></table></figure>
+<h3 id="读取图片"><a href="#读取图片" class="headerlink" title="读取图片"></a>读取图片</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用 open 函数读取：</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;logo.png&quot;</span>, <span class="string">&quot;r&quot;</span>, encoding=<span class="string">&quot;utf8&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line"><span class="built_in">print</span>(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment">#使用二进制形式打开</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;logo.png&quot;</span>, <span class="string">&quot;rb&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line"> img = f.read()</span><br><span class="line"> <span class="built_in">print</span>(<span class="built_in">type</span>(img))</span><br><span class="line"> <span class="built_in">print</span>(img)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">#获取图片的像素矩阵：</span></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"><span class="comment"># 此处使用 opencv 读取，可以换其他工具</span></span><br><span class="line">img = cv2.imread(<span class="string">&quot;logo.png&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(img)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h3 id="读取音频"><a href="#读取音频" class="headerlink" title="读取音频"></a>读取音频</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用 open 函数读取：</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;music.wav&quot;</span>, <span class="string">&quot;rb&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line"><span class="built_in">print</span>(f.read())</span><br><span class="line"></span><br><span class="line"><span class="comment">#获取音频的矩阵表示</span></span><br><span class="line"><span class="keyword">from</span> scipy.io <span class="keyword">import</span> wavfile</span><br><span class="line">wav_data = wavfile.read(<span class="string">&quot;music.wav&quot;</span>)</span><br><span class="line">wav_data</span><br></pre></td></tr></table></figure>
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="reward-container">
+  <div>请我一杯咖啡吧！</div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/alipay.jpg" alt="Mr-err 支付宝">
+        <span>支付宝</span>
+      </div>
+
+  </div>
+</div>
+
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>本文作者： </strong>Mr-err
+  </li>
+  <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="http://www.3things.top/computer/Python/Python_use.html" title="Python（三）-- 常用命令">http://www.3things.top/computer/Python/Python_use.html</a>
+  </li>
+  <li class="post-copyright-license">
+      <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/Python/" rel="tag"># Python</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/computer/Python/Python_install.html" rel="prev" title="Python（二）--安装">
+                  <i class="fa fa-angle-left"></i> Python（二）--安装
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA/nginx/nginx%EF%BC%88%E4%BA%8C%EF%BC%89-%E5%AE%89%E8%A3%85/" rel="next" title="Nginx（二）--安装">
+                  Nginx（二）--安装 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2024</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">Mr-err</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/mist/" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.3.0/pdfobject.min.js","integrity":"sha256-JJZNsid68vnh3/zyj0lY9BN5ynxVX/12XgOa1TlaYN0="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+
+
+
+
+
+  
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr+QR0SQDNfgglgtcM=" crossorigin="anonymous">
+  <script class="next-config" data-name="katex" type="application/json">{"copy_tex_js":{"url":"https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js","integrity":"sha256-Us54+rSGDSTvIhKKUs4kygE2ipA0RXpWWh0/zLqw3bs="}}</script>
+  <script src="/js/third-party/math/katex.js"></script>
+
+
+
+<script src="/js/markmap.js"></script></body>
+</html>
