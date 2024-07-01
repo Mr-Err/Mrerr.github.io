@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">37</span>
+          <span class="site-state-item-count">38</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
           <a href="/categories/">
-        <span class="site-state-item-count">25</span>
+        <span class="site-state-item-count">27</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
@@ -183,6 +183,204 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.3things.top/computer/Git/github_install.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mr-err">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/computer/Git/github_install.html" class="post-title-link" itemprop="url">Github安装</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-07-01 15:00:35 / 修改时间：15:02:59" itemprop="dateCreated datePublished" datetime="2024-07-01T15:00:35+08:00">2024-07-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/" itemprop="url" rel="index"><span itemprop="name">软件</span></a>
+        </span>
+          ，
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/Github/" itemprop="url" rel="index"><span itemprop="name">Github</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="一、git安装"><a href="#一、git安装" class="headerlink" title="一、git安装"></a>一、git安装</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#使用apt命令安装</span></span><br><span class="line">sudo apt update</span><br><span class="line">sudo apt install git</span><br><span class="line"></span><br><span class="line"><span class="comment">#查看git版本</span></span><br><span class="line">git --version</span><br><span class="line"></span><br><span class="line"><span class="comment"># 新建git工作区并授权</span></span><br><span class="line"><span class="built_in">mkdir</span> /home/github</span><br><span class="line"><span class="built_in">chmod</span> -R +777 /home/github</span><br><span class="line"></span><br><span class="line"><span class="comment"># 初试化git</span></span><br><span class="line"><span class="built_in">cd</span> /home/github</span><br><span class="line">git init</span><br><span class="line">git config --global user.name <span class="string">&quot;GitHub用户名&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;GitHub邮箱&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="二、github-配置SSH登录"><a href="#二、github-配置SSH登录" class="headerlink" title="二、github 配置SSH登录"></a>二、github 配置SSH登录</h1><ul>
+<li>1、终端生成新的SSH密钥对<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#终端会提示你选择一个保存密钥文件的位置（通常默认位置是`~/.ssh/id_rsa`作为私钥，`~/.ssh/id_rsa.pub`作为公钥）。</span></span><br><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>2、打开公钥文件（通常是<code>id_rsa.pub</code>），复制其中的内容。</li>
+<li>3、登录到你的GitHub账户。<ul>
+<li>点击右上角的头像，选择“Settings”（设置）。</li>
+<li>在左侧菜单中，选择“SSH and GPG keys”（SSH和GPG密钥）。</li>
+<li>点击“New SSH key”（新建SSH密钥）。</li>
+<li>在“Title”（标题）字段中输入一个描述性标题。</li>
+<li>在“Key”（密钥）字段中粘贴你复制的公钥内容。</li>
+<li>点击“Add SSH key”（添加SSH密钥）。</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://www.3things.top/tips/search.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="Mr-err">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Ming's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/tips/search.html" class="post-title-link" itemprop="url">检索技巧</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2024-07-01 14:13:56 / 修改时间：14:18:04" itemprop="dateCreated datePublished" datetime="2024-07-01T14:13:56+08:00">2024-07-01</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tips/" itemprop="url" rel="index"><span itemprop="name">tips</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="完全匹配搜索"><a href="#完全匹配搜索" class="headerlink" title="完全匹配搜索"></a>完全匹配搜索</h1><ul>
+<li>查询词的外边加上<strong>双引号</strong></li>
+<li>引号中英文均可</li>
+<li>例如搜索“CT参数标定”，得到的结果不是分别带有“CT”或“参数标定”的网页</li>
+</ul>
+<h1 id="标题必含关键词"><a href="#标题必含关键词" class="headerlink" title="标题必含关键词"></a>标题必含关键词</h1><ul>
+<li>查询词前加上<strong>intitle</strong></li>
+<li>冒号为英文输入下的</li>
+<li>例如搜索intitle:CT参数标定，则搜索结果里每一个标题都会带有“CT参数标定”</li>
+</ul>
+<h1 id="搜索文档"><a href="#搜索文档" class="headerlink" title="搜索文档"></a>搜索文档</h1><ul>
+<li>例如查询词后空格再输入<strong>filetype:文件格式</strong>(doc&#x2F;pdf&#x2F;xls&#x2F;等等)</li>
+<li>例如搜索：线性规划filetype:pdf,得到的就都是pdf版的资料</li>
+</ul>
+<h1 id="去掉不想要的"><a href="#去掉不想要的" class="headerlink" title="去掉不想要的"></a>去掉不想要的</h1><ul>
+<li>查询词后面加空格后加减号与关键字</li>
+<li>例如搜索后不想看百度文库的东西，搜索线性规划filetype:pdf-百度文库</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://www.3things.top/computer/Python/Python_index.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -213,7 +411,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2024-06-25 14:20:17 / 修改时间：15:02:19" itemprop="dateCreated datePublished" datetime="2024-06-25T14:20:17+08:00">2024-06-25</time>
+      <time title="创建时间：2024-06-25 14:20:17 / 修改时间：16:47:17" itemprop="dateCreated datePublished" datetime="2024-06-25T14:20:17+08:00">2024-06-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -241,7 +439,7 @@
     <div class="post-body" itemprop="articleBody">
           
 <div class="markmap-container" style="height:height">
-  <svg data="{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;Python&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_info.html\&quot;&gt;Pyhton简介&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[2,3]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_install.html\&quot;&gt;Python安装&lt;/a&gt;&quot;}]}"></svg>
+  <svg data="{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;Python&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_info.html\&quot;&gt;Pyhton简介&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[2,3]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_install.html\&quot;&gt;Python安装&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[3,4]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_use.html\&quot;&gt;Python基础&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[4,5]},&quot;v&quot;:&quot;Python问题处理&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:6,&quot;p&quot;:{&quot;lines&quot;:[5,6]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/python_problem240420.html\&quot;&gt;vscode使用Jupyter时提示缺少模块&amp;quot;_sqlite3&amp;quot;&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:6,&quot;p&quot;:{&quot;lines&quot;:[6,7]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/python_problem2404201.html\&quot;&gt;vscode使用Jupyter时提示运行具有“/usr/local/python312/bin/python3”的单元格需要ipykernel包&lt;/a&gt;&quot;}]}]}"></svg>
 </div>
 
       
@@ -330,101 +528,6 @@
     
     <div class="post-body" itemprop="articleBody">
           <h1 id="Python简介"><a href="#Python简介" class="headerlink" title="Python简介"></a>Python简介</h1><p>官网地址：<a target="_blank" rel="noopener" href="https://www.python.org/">https://www.python.org/</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.3things.top/computer/Git/github_login.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mr-err">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Ming's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/computer/Git/github_login.html" class="post-title-link" itemprop="url">github 登录配置</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2024-06-25 11:28:27 / 修改时间：15:02:19" itemprop="dateCreated datePublished" datetime="2024-06-25T11:28:27+08:00">2024-06-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/Github/" itemprop="url" rel="index"><span itemprop="name">Github</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="一、github-配置SSH登录"><a href="#一、github-配置SSH登录" class="headerlink" title="一、github 配置SSH登录"></a>一、github 配置SSH登录</h1><ul>
-<li>1、终端生成新的SSH密钥对<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#终端会提示你选择一个保存密钥文件的位置（通常默认位置是`~/.ssh/id_rsa`作为私钥，`~/.ssh/id_rsa.pub`作为公钥）。</span></span><br><span class="line">ssh-keygen -t rsa -b 4096 -C <span class="string">&quot;your_email@example.com&quot;</span></span><br></pre></td></tr></table></figure></li>
-<li>2、打开公钥文件（通常是<code>id_rsa.pub</code>），复制其中的内容。</li>
-<li>3、登录到你的GitHub账户。<ul>
-<li>点击右上角的头像，选择“Settings”（设置）。</li>
-<li>在左侧菜单中，选择“SSH and GPG keys”（SSH和GPG密钥）。</li>
-<li>点击“New SSH key”（新建SSH密钥）。</li>
-<li>在“Title”（标题）字段中输入一个描述性标题。</li>
-<li>在“Key”（密钥）字段中粘贴你复制的公钥内容。</li>
-<li>点击“Add SSH key”（添加SSH密钥）。</li>
-</ul>
-</li>
-</ul>
 
       
     </div>
@@ -858,7 +961,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-25 15:02:19" itemprop="dateModified" datetime="2024-06-25T15:02:19+08:00">2024-06-25</time>
+      <time title="修改时间：2024-06-25 16:48:53" itemprop="dateModified" datetime="2024-06-25T16:48:53+08:00">2024-06-25</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -886,7 +989,7 @@
     <div class="post-body" itemprop="articleBody">
           <h1 id="1、基础知识"><a href="#1、基础知识" class="headerlink" title="1、基础知识"></a>1、基础知识</h1>
 <div class="markmap-container" style="height:height">
-  <svg data="{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;基础知识&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;认识人工智能&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[2,3]},&quot;v&quot;:&quot;Python语言&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[3,4]},&quot;v&quot;:&quot;高等数学&quot;}]}"></svg>
+  <svg data="{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:2,&quot;p&quot;:{&quot;lines&quot;:[0,1]},&quot;v&quot;:&quot;基础知识&quot;,&quot;c&quot;:[{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[1,2]},&quot;v&quot;:&quot;认识人工智能&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[2,3]},&quot;v&quot;:&quot;&lt;a href=\&quot;/computer/Python/Python_index.html\&quot;&gt;Python语言&lt;/a&gt;&quot;},{&quot;t&quot;:&quot;list_item&quot;,&quot;d&quot;:4,&quot;p&quot;:{&quot;lines&quot;:[3,4]},&quot;v&quot;:&quot;高等数学&quot;}]}"></svg>
 </div>
 
 
@@ -1094,95 +1197,6 @@
     
     <div class="post-body" itemprop="articleBody">
           
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://www.3things.top/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%88generative-adversarial-network%EF%BC%8Cgan%EF%BC%89/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpg">
-      <meta itemprop="name" content="Mr-err">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ming's Blog">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Ming's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/%E7%94%9F%E6%88%90%E5%AF%B9%E6%8A%97%E7%BD%91%E7%BB%9C%EF%BC%88generative-adversarial-network%EF%BC%8Cgan%EF%BC%89/" class="post-title-link" itemprop="url">生成对抗网络（Generative Adversarial Network，GAN）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2024-06-15 20:12:31" itemprop="dateCreated datePublished" datetime="2024-06-15T20:12:31+08:00">2024-06-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2024-06-25 15:02:19" itemprop="dateModified" datetime="2024-06-25T15:02:19+08:00">2024-06-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
-        </span>
-          ，
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">机器学习</span></a>
-        </span>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>生成对抗网络由两个自网络组成，包含一个生成器以及一个用于辅助生成器训练的判别器，通过极大-极小的训练策略使得生成器学习到如何从潜变量生成出能够以假乱真的生成图像。但在大多数不受约束的图像生成问题下，GAN只能作为一种采样函数来生成与训练集相似的图像。</p>
-
       
     </div>
 
